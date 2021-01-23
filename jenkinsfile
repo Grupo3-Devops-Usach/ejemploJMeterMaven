@@ -4,7 +4,7 @@ pipeline {
                stage('test') {
                    steps {
                        
-                                  bat './mvnw.cmd clean compile -e'
+                                  bat 'mvn verify -Pperformance'
                        
                     }     
                 }
