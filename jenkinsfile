@@ -3,11 +3,11 @@ pipeline {
         stages {
                stage('test') {
                    steps {
-                       {
-                                   bat 'mvn verify -Pperformance'
-
-                       }
+                       
+                                  bat './mvnw.cmd clean compile -e'
+                       
                     }     
                 }
         }
 }
+
