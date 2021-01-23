@@ -8,7 +8,7 @@ pipeline
             steps
             {
                     
-                    bat 'mvn verify -Pperformance'
+                    bat 'mvnw verify -Pperformance'
             }
         }
     }
