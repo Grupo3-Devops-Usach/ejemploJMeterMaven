@@ -7,8 +7,8 @@ pipeline
         {
             steps
             {
-                    echo 'Compile Code ...'
-                    sh 'mvn verify -Pperformance'
+                    
+                    bat 'mvn verify -Pperformance'
             }
         }
     }
